@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100%;
+  font-size: 100%;
+}
+
+body {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Prevent text scaling */
+* {
+  max-height: 1000000px;
+}
+
+/* Custom utility classes */
+.responsive-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Ensure text is readable without zooming */
+input, select, textarea, button {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  input, select, textarea, button {
+    font-size: 1rem;
+  }
+}
