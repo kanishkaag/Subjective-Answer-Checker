@@ -28,14 +28,18 @@ Follow the instructions below to run the project locally on your machine.
 ```
 
 ## 🖥️ Backend Setup (Flask)
-1. 🧪 Install backend dependencies:
+1. Navigate to the backend directory:
 ```bash
-  pip install flask flask_cors 
+  cd backend
+```
+2. 🧪 Install backend dependencies:
+```bash
+  pip install -r requirements.txt
 ```
 
-2. ▶️ Start the Flask server:
+3. ▶️ Start the Flask server:
 ```python
-  main.py
+  python app.py
 ```
 
 ## 🖥️ Frontend Setup (React)
@@ -83,6 +87,10 @@ Click the Check button to analyze.
 
 ###  Score
 ![Score](./images/screenshot4.png)
+
+## Flow Diagram
+![Screenshot from 2025-07-04 23-30-11](https://github.com/user-attachments/assets/6ced05c5-7eb9-4615-84e2-a033f4dedda5)
+
 
 🙋 Author - 
 Kanishka Agrawal
