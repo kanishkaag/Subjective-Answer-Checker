@@ -48,7 +48,7 @@ export function StudentDashboard() {
   const onSubmit = async (data: FormData) => {
    
     setIsSubmitting(true);
-    const dt = await (await axios.post('https://gradeit-api-4y8r.onrender.com/evaluate',{
+    const dt = await (await axios.post('https://subjective-answer-checker.onrender.com/evaluate',{
       teacher_answers:ta,
       
       student_answers: data.answers,
